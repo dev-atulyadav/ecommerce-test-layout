@@ -1,0 +1,1159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    /* background: rgba(18, 215, 250, 0.69); */
+    background: linear-gradient(to right, rgb(31, 162, 255), rgb(18, 216, 250), rgb(166, 255, 203));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header {
+    height: 5.6rem;
+    width: 100vw;
+    display: flex;
+    background: #b4b4b455;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.405);
+}
+
+header .logo {
+    height: 5rem;
+    width: 5rem;
+    background-image: url("../Images/shopping-cart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    /* position: absolute; */
+    left: 0;
+    /* margin: 2rem; */
+    margin-left: 1rem;
+}
+
+header div:nth-child(2) {
+    /* position: absolute; */
+    left: 0;
+    /* margin-left: 8rem; */
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+header div:nth-child(2) strong {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+
+}
+
+nav {
+    z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+nav .explore {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav .explore li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    height: 12px;
+    border-radius: 12px;
+
+}
+
+header nav .explore li a:hover {
+    transition: 0.5s;
+    background: #ffffff3e;
+}
+
+header form {
+    margin-right: 1rem;
+
+}
+
+header form input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+header form input:first-child {
+    height: 2.5rem;
+    width: 12rem;
+    padding: 12px;
+    background: rgb(255, 255, 255);
+}
+
+header form a:last-child {
+    position: relative;
+    top: 0.3rem;
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu-button,
+#close-button {
+    display: none;
+
+}
+
+.images div {
+    margin: 0.8rem;
+    height: 80vh;
+    width: 95vw;
+    border-radius: 12px;
+}
+
+.images div:nth-child(1) {
+    background-image: url("../Images/pexels-pixabay-325876.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome {
+    position: absolute;
+    top: 6.4rem;
+    height: 80vh;
+    width: 95vw;
+    /* margin: 0.8rem; */
+    background: #0000003c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.welcome h2 strong {
+    font-family: 'Pacifico', cursive;
+}
+
+.welcome div {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome button {
+    width: 10rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    background: transparent;
+    color: white;
+    border-radius: 12px;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome div button:first-child {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    transition: 0.5s;
+
+}
+
+.welcome div button:first-child:hover {
+    background-position: right center;
+    color: #fff;
+}
+
+.welcome div button:last-child {
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+
+}
+
+.welcome div button:last-child:hover,
+.user-login input:nth-child(3):hover,
+#signup-form .user-signup input:nth-child(7):hover {
+    background-position: right center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.get-user-email p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.get-user-email form:first-of-type input {
+    height: 3.2rem;
+    width: 20rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.get-user-email form:first-of-type input:first-child {
+    padding-left: 12px;
+    background: #48484874;
+}
+
+.get-user-email form:first-of-type input:last-child {
+    width: 7rem;
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43 51%, #EB3349 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.get-user-email form:first-of-type input:last-child:hover,
+.user-login input:last-child:hover,
+#signup-form .user-signup input:nth-child(8):hover {
+    background-position: right center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.welcome a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    align-self: last baseline;
+}
+
+.welcome a:hover {
+    text-decoration: underline;
+}
+
+#login-form {
+    position: absolute;
+    top: 5.6rem;
+    height: 80vh;
+    width: 95%;
+    margin: 0.8rem;
+    background: #0000003c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    display: none;
+
+}
+
+.user-login {
+    height: 22rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #48484874;
+    border-radius: 12px;
+    gap: 1.5rem;
+}
+
+.user-login input {
+    height: 2.8rem;
+    width: 16rem;
+    padding-left: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #ffffff70;
+}
+
+.user-login input:nth-child(3) {
+    padding: 0;
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+
+}
+
+.user-login input:last-child {
+    padding: 0;
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43 51%, #EB3349 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#signup-form {
+    position: absolute;
+    top: 5.6rem;
+    height: 80vh;
+    width: 95%;
+    margin: 0.8rem;
+    background: #0000003c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    display: none;
+
+}
+
+#signup-form .user-signup {
+    height: 20rem;
+    width: 30rem;
+    background: #48484874;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+#signup-form .user-signup input {
+    height: 2.8rem;
+    width: 12rem;
+    background: #ffffff70;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 0.5rem;
+
+}
+
+#signup-form .user-signup input:nth-child(7) {
+    padding: 0;
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9 51%, #1D976C 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#signup-form .user-signup input:nth-child(8) {
+    padding: 0;
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43 51%, #EB3349 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.premium-deals,
+.men-clothing,
+.women-clothing,
+.kid-clothing {
+    background: #0000003c;
+    height: 48vh;
+    width: 95vw;
+    margin: 0.8rem;
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+
+.best-deals div {
+    background: #ffffff98;
+    height: 15.5rem;
+    width: 112rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.best-deals div .product-img {
+    background: #ffffff;
+    height: 11.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+    border-radius: 8px;
+}
+
+.best-deals div p {
+    font-size: 0.9rem;
+}
+
+.best-deals div:nth-child(1) .product-img img {
+    width: 6.5rem;
+    height: 9.2rem;
+}
+
+.best-deals div:nth-child(2) .product-img img {
+    width: 10rem;
+    height: 6rem;
+}
+
+.best-deals div:nth-child(3) .product-img img {
+    width: 7.5rem;
+    height: 8rem;
+}
+
+.best-deals div:nth-child(4) .product-img img {
+    width: 7.5rem;
+    height: 8rem;
+}
+
+.best-deals div:nth-child(5) .product-img img {
+    width: 7.5rem;
+    height: 8rem;
+}
+
+.best-deals div:nth-child(6) .product-img img {
+    width: 7.5rem;
+    height: 8rem;
+}
+
+.best-deals div button {
+    height: 2rem;
+    width: 5rem;
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 3vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.best-deals div button:first-of-type {
+    background-image: linear-gradient(to right, #00b359 0%, #9ee2c4 51%, #2fab88 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    text-align: center;
+}
+
+.best-deals div button:last-child {
+    margin-left: 0.5vw;
+    background-image: linear-gradient(to right, rgb(0, 174, 255) 0%, #97d9ed 51%, rgb(0, 174, 255) 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    text-align: center;
+}
+
+.best-deals div button:first-of-type:hover,
+.best-deals div button:last-child:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.best-deals div:hover {
+    transition: 0.5s;
+    height: 16.8rem;
+}
+
+.best-deals div:hover button {
+    transition: 0.5s;
+    margin-top: 0.3rem;
+}
+
+.men-clothing {
+    margin-top: 0;
+}
+
+.men-clothing div:nth-child(1) .product-img img {
+    width: 8rem;
+    height: 11.5rem;
+
+}
+
+.men-clothing div:nth-child(2) .product-img img {
+    width: 6rem;
+    height: 11.5rem;
+
+}
+
+.men-clothing div:nth-child(3) .product-img img {
+    width: 7.5rem;
+    height: 10rem;
+
+}
+
+.men-clothing div:nth-child(4) .product-img img {
+    width: 5.5rem;
+    height: 11.5rem;
+
+}
+
+.men-clothing div:nth-child(5) .product-img img {
+    width: 10rem;
+    height: 11.5rem;
+
+}
+
+.men-clothing div:nth-child(6) .product-img img {
+    width: 10rem;
+    height: 11.5rem;
+
+}
+
+.women-clothing {
+    margin-top: 0;
+}
+
+.women-clothing div:nth-child(1) .product-img img {
+    width: 5rem;
+    height: 11.5rem;
+}
+
+.women-clothing div:nth-child(2) .product-img img {
+    width: 8rem;
+    height: 11.5rem;
+}
+
+.women-clothing div:nth-child(3) .product-img img {
+    width: 7rem;
+    height: 11.5rem;
+}
+
+.women-clothing div:nth-child(4) .product-img img {
+    width: 11.5rem;
+    height: 11.5rem;
+}
+
+.women-clothing div:nth-child(5) .product-img img {
+    width: 11.5rem;
+    height: 11.5rem;
+}
+
+.women-clothing div:nth-child(6) .product-img img {
+    width: 11.5rem;
+    height: 11.5rem;
+}
+
+.kid-clothing {
+    margin-top: 0;
+}
+
+.kid-clothing div:nth-child(1) .product-img img {
+    width: 11.5rem;
+    height: 11.5rem;
+}
+
+.kid-clothing div:nth-child(2) .product-img img {
+    height: 11.5rem;
+}
+
+.kid-clothing div:nth-child(3) .product-img img {
+    width: 10rem;
+    height: 10.5rem;
+}
+
+.kid-clothing div:nth-child(4) .product-img img {
+    width: 9rem;
+    height: 10.5rem;
+}
+
+.kid-clothing div:nth-child(5) .product-img img {
+    width: 13rem;
+    height: 11.5rem;
+}
+
+.kid-clothing div:nth-child(6) .product-img img {
+    width: 12.5rem;
+    height: 11.5rem;
+}
+
+footer div:first-child {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    background: #b4b4b455;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.405);
+    font-weight: bold;
+
+}
+
+footer div:first-child ul {
+    /* text-decoration: none; */
+    display: flex;
+    gap: 0.8rem;
+    margin-right: 1rem;
+
+}
+
+footer div:first-child ul li {
+    /* text-decoration: none; */
+    display: flex;
+    font-size: 1.2rem;
+
+}
+
+footer div:first-child ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+
+}
+
+footer div:nth-child(2) {
+    background: #2020205d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0rem;
+    overflow: hidden;
+    gap: 1rem;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+footer div:nth-child(2) ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+
+footer div:nth-child(2) ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    height: 12px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+footer div:nth-child(2) ul li a:hover {
+    text-decoration: underline;
+    /* font-size: 1rem; */
+    background: #ffffff3e;
+    transition: 0.5s;
+}
+
+footer:hover div:last-child {
+    height: 20vh;
+    transition: 1s;
+}
+
+footer div:first-child ul li a:hover {
+    /* font-size: 1.5rem; */
+    transition: 0.5s;
+    color: rgb(0, 183, 255);
+}
+
+footer div:first-child ul li:last-child a:hover {
+    color: rgb(217, 0, 255);
+}
+
+/* For Mobile Screen */
+@media screen and (min-width : 320px) and (max-width:481px) {
+
+    body {
+        display: block;
+    }
+
+    header {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    header nav .explore li:nth-child(even) {
+        display: none;
+    }
+
+    nav .explore {
+        display: none;
+
+    }
+
+    nav .explore {
+        position: absolute;
+        /* left: 0; */
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        /* padding-top: 2rem; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: start;
+        gap: 0rem;
+        height: 9rem;
+        width: 25%;
+        background: linear-gradient(to right, rgba(40, 182, 218, 0.86), rgba(31, 154, 175, 0.712), rgba(109, 244, 203, 0.921));
+        z-index: 1;
+        font-size: 1rem;
+        transition: 0.5s;
+        box-shadow: 2px 2px 2px 2px rgba(9, 9, 9, 0.521);
+        right: 0.6rem;
+        top: 6rem;
+        border-radius: 12px; 
+        overflow: hidden;
+    }
+
+    .explore li {
+        /* box-shadow: 0px 2px 2px 0px rgb(33, 33, 33); */
+        border-radius: 12px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        padding-left: 0;
+        font-size: 13px;
+
+    }
+
+    .explore li:hover{
+        background: #ffffff69;
+        transition: 0.5s;
+        background-position: left right;
+    }
+
+    .explore li a:hover {
+
+        background: transparent !important;
+    }
+
+    header form {
+        display: none;
+
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 1.6rem;
+        flex-grow: 1;
+        text-align: end;
+        margin-right: 1rem;
+        cursor: pointer;
+
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+        top: 6.1rem;
+        left: 0.5rem;
+    }
+
+    .welcome button {
+        width: 6rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .get-user-email {
+        flex-basis: 45%;
+    }
+
+    .get-user-email form:first-of-type input {
+        height: 2.8rem;
+        width: 11rem;
+    }
+
+    .get-user-email form:first-of-type input:last-child {
+        width: 5rem;
+        font-size: 0.7rem;
+    }
+
+    .welcome p {
+        font-size: 0.8rem;
+    }
+
+    #signup-form .user-signup {
+        height: 30rem;
+        width: 18rem;
+        gap: 0.5rem;
+    }
+
+    #signup-form .user-signup input,
+    .user-login input {
+        height: 2.5rem;
+        width: 14rem;
+        padding-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .images div,
+    #login-form,
+    #signup-form,
+    .premium-deals,
+    .men-clothing,
+    .women-clothing,
+    .kid-clothing {
+        margin: 0.5rem;
+        width: 95vw;
+    }
+
+    .premium-deals,
+    .men-clothing,
+    .women-clothing,
+    .kid-clothing {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: scroll;
+        height: 20rem;
+    }
+
+    .best-deals div {
+        height: 16.5rem;
+        width: 11.5rem;
+        font-size: 0.6rem;
+    }
+
+    .best-deals div:hover {
+        height: 18.3rem;
+    }
+
+    .best-deals div button {
+        margin-top: 0;
+    }
+
+    .best-deals div:hover button {
+        margin-top: 1rem;
+    }
+
+    footer div:first-child {
+        height: 10%;
+        width: 100%;
+        font-size: 0.6rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    footer div:first-child ul {
+        text-decoration: none;
+        display: flex;
+        gap: 0.8rem;
+        margin-right: 0;
+
+    }
+
+    footer div:first-child ul li {
+        font-size: 1rem;
+    }
+
+    footer div:nth-child(2) {
+        font-size: 0.7rem;
+
+    }
+
+    footer div:nth-child(2) ul {
+        gap: 0.8rem;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    footer div:nth-child(2) ul li {
+        margin: 0;
+    }
+
+    footer:hover div:last-child {
+        height: 8rem;
+    }
+
+}
+
+
+/* For Tablet Screen */
+@media screen and (min-width : 480px) and (max-width:768px) {
+
+    header {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        justify-content: space-between;
+    }
+
+    nav .explore {
+        display: none;
+    }
+
+    header form input:first-child {
+        height: 2.5rem;
+        width: 29vw;
+        padding: 12px;
+        background: rgb(255, 255, 255);
+    }
+    .explore li{
+        display: none;
+    }
+
+    .welcome {
+        font-size: 1.8rem;
+    }
+
+    .welcome button {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .get-user-email {
+        flex-basis: 45%;
+    }
+
+    .get-user-email form:first-of-type input {
+        height: 3rem;
+        width: 15rem;
+    }
+
+    .get-user-email form:first-of-type input:last-child {
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+
+    .welcome p {
+        font-size: 0.8rem;
+    }
+
+    #signup-form .user-signup {
+        height: 30rem;
+        width: 18rem;
+        gap: 0.5rem;
+    }
+
+    #signup-form .user-signup input,
+    .user-login input {
+        height: 2.5rem;
+        width: 14rem;
+        padding-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+
+    .premium-deals,
+    .men-clothing,
+    .women-clothing,
+    .kid-clothing {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: scroll;
+        height: 19rem;
+    }
+
+    .best-deals div {
+        height: 16.5rem;
+        width: 11.5rem;
+        font-size: 0.6rem;
+    }
+
+    .best-deals div:hover {
+        height: 18.3rem;
+    }
+
+    .best-deals div button {
+        margin-top: 3rem;
+    }
+
+    .best-deals div:hover button {
+        margin-top: 0.7rem;
+    }
+
+    footer div:first-child {
+        height: 4rem;
+        /* width: 100vw; */
+        font-size: 0.8rem;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    footer div:first-child ul {
+        text-decoration: none;
+        display: flex;
+        gap: 0.8rem;
+        margin-right: 0;
+
+    }
+
+    footer div:first-child ul li {
+        font-size: 1.2rem;
+    }
+
+    footer div:nth-child(2) {
+        font-size: 0.8rem;
+
+    }
+
+    footer div:nth-child(2) ul {
+        gap: 1rem;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    footer div:nth-child(2) ul li {
+        margin: 0;
+    }
+
+    footer:hover div:last-child {
+        height: 15vh;
+        transition: 0.5s;
+    }
+
+
+}
+
+/* For PC Screen */
+@media screen and (min-width : 769px) and (max-width:1200px) {
+
+    header .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    header div:nth-child(2),
+    header div:nth-child(2) strong {
+        font-size: 2rem;
+    }
+
+
+    nav {
+        flex-grow: 0;
+        font-size: 2vw;
+    }
+
+    nav .explore {
+        position: absolute;
+        left: 30vw;
+        gap: 0.5rem;
+    }
+
+    header form {
+        position: absolute;
+        right: 0;
+    }
+
+    header form input:first-child {
+        /* display: none; */
+        width: 15vw;
+        padding: 12px;
+        background: rgb(255, 255, 255);
+    }
+
+
+    .get-user-email {
+        flex-basis: 45%;
+    }
+
+    .premium-deals,
+    .men-clothing,
+    .women-clothing,
+    .kid-clothing {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: scroll;
+        height: 19rem;
+    }
+
+    .best-deals div {
+        height: 16.5rem;
+        width: 11.5rem;
+        font-size: 0.6rem;
+    }
+
+    .best-deals div:hover {
+        height: 18.3rem;
+    }
+
+    .best-deals div button {
+        margin-top: 3rem;
+    }
+
+    .best-deals div:hover button {
+        margin-top: 0.7rem;
+    }
+
+    footer div:first-child {
+        height: 4rem;
+        /* width: 100vw; */
+        font-size: 0.8rem;
+    }
+
+    footer div:first-child ul {
+        display: flex;
+        gap: 0.8rem;
+
+    }
+
+    footer div:first-child ul li {
+        font-size: 1.2rem;
+    }
+
+    footer div:nth-child(2) {
+        font-size: 0.8rem;
+
+    }
+
+    footer div:nth-child(2) ul {
+        gap: 1rem;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    footer:hover div:last-child {
+        height: 15vh;
+        transition: 0.5s;
+    }
+
+}
